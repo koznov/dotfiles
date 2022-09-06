@@ -1,3 +1,5 @@
+let g:airline_powerline_fonts = 1
+
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 
@@ -20,7 +22,7 @@ set number
 set cursorline
 
 " Highlight cursor line underneath the cursor vertically.
-set cursorcolumn
+" set cursorcolumn
 
 " Set shift width to 4 spaces.
 set shiftwidth=4
@@ -83,6 +85,8 @@ call plug#begin('~/.vim/plugged')
 
   Plug 'preservim/nerdtree'
 
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " }}}
@@ -184,8 +188,11 @@ if has('gui_running')
     set background=dark
 
     " Set the color scheme.
-    colorscheme molokai
-
+    " colorscheme molokai
+    colorscheme onedark
+    highlight Normal ctermbg=None
+    highlight LineNr ctermfg=DarkGrey
+    
     " Set a custom font you have installed on your computer.
     " Syntax: <font_name>\ <weight>\ <size>
     set guifont=Monospace\ Regular\ 12
