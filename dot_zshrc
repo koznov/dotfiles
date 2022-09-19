@@ -107,6 +107,7 @@ fi
 
     alias k="kubectl"
     alias kv="/usr/local/bin/kubectl-vsphere"
+    alias kvl="/usr/local/bin/kubectl-vsphere logout"
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
